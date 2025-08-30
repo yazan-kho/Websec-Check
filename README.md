@@ -1,6 +1,6 @@
 # Websec Check: A Web Security Auditing Extension
 
-**Websec Check** is a browser extension that provides a quick, client-side security audit of the current page you are visiting. It checks for common security misconfigurations in both the server-provided security headers and the page's HTML structure (DOM), helping developers and security enthusiasts identify potential vulnerabilities.
+**Websec Check** is a Chrome-based browser extension that provides a quick, client-side security audit of the current page you are visiting. It checks for common security misconfigurations in both the server-provided security headers and the page's HTML structure (DOM), helping developers and security enthusiasts identify potential vulnerabilities.
 
 
 
@@ -43,5 +43,6 @@ This extension is not currently available on the Chrome Web Store. To install it
 2.  Open your browser and navigate to the extensions page (e.g., `chrome://extensions` for Chrome).
 3.  Enable **Developer mode** in the top-right corner.
 4.  Click **"Load unpacked"** and select the folder where you saved the extension's files.
+
 
 The extension icon should now appear in your browser toolbar.
