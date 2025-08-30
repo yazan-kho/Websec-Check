@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Websec Check",
+    "version": "1.0",
+    "description": "Checks basic client-side security on the current page.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Websec Check",
+        "default_icon": "websec_logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "webRequest"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+    }]
+}

@@ -1,0 +1,135 @@
+:root {
+  --green-ok: #28a745;
+  --yellow-warn: #ffc107;
+  --red-danger: #dc3545;
+  --blue-info: #007bff;
+  --bg-color: #f8f9fa;
+  --text-color: #343a40;
+  --border-color: #dee2e6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  width: 400px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.wrap {
+  padding: 15px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--blue-info);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+.url-bar {
+  background-color: #e9ecef;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  word-break: break-all;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.section-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.status-icon {
+  font-size: 20px;
+  margin-right: 10px;
+  min-width: 20px;
+}
+
+.status-icon.ok {
+  color: var(--green-ok);
+}
+.status-icon.warn {
+  color: var(--yellow-warn);
+}
+.status-icon.danger {
+  color: var(--red-danger);
+}
+.status-icon.info {
+  color: var(--blue-info);
+}
+
+.item-content {
+  flex-grow: 1;
+}
+
+.item-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.item-description {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.details-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 5px 0 0 30px;
+}
+
+.details-list li {
+  font-size: 12px;
+  color: #495057;
+  padding-left: 15px;
+  position: relative;
+}
+
+.details-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #adb5bd;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-color);
+  font-size: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}

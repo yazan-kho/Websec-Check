@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Websec Check</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <img src="websec_logo.png" alt="Websec Icon"> Websec Check
+                </div>
+                <div id="page" class="url-bar">Loading...</div>
+            </div>
+
+            <h2>Security Headers</h2>
+            <div id="headers-section">Loading...</div>
+
+            <h2>Page Risks</h2>
+            <div id="risks-section"></div>
+
+            <div class="legend">
+                <div class="legend-item"><span class="legend-icon ok">✅</span> OK</div>
+                <div class="legend-item"><span class="legend-icon warn">⚠️</span> Needs Attention</div>
+                <div class="legend-item"><span class="legend-icon danger">❌</span> Risky</div>
+                <div class="legend-item"><span class="legend-icon info">ℹ️</span> Information</div>
+
+            </div>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
